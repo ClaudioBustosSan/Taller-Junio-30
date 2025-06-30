@@ -1,2 +1,2 @@
-# Taller-Junio-30
+# TallerJunio30
 Introducción a IA + Web
