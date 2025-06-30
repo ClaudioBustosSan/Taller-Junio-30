@@ -1,0 +1,159 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Claudio Bustos Web</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-green: #38e07b;--light-cream: #fdfbf6;--dark-green-text: #1e402d;--medium-green-accent: #51946c;--light-green-button-bg: #e0f2e9;}
+      body {
+        font-family: "Manrope", "Noto Sans", sans-serif;
+      }
+      .nav-link {
+        @apply text-[var(--dark-green-text)] text-sm font-medium leading-normal transition-colors hover:text-[var(--primary-green)];
+      }
+      .social-icon-button {
+        @apply flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[var(--light-green-button-bg)] text-[var(--dark-green-text)] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 transition-colors hover:bg-[var(--primary-green)] hover:text-white;
+      }
+      .footer-social-icon {
+        @apply text-[var(--medium-green-accent)] transition-colors hover:text-[var(--primary-green)];
+      }
+    </style>
+</head>
+<body class="bg-[var(--light-cream)] text-[var(--dark-green-text)]">
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap bg-[var(--primary-green)] px-6 sm:px-10 py-4 shadow-md">
+<div class="flex items-center gap-3 text-white">
+<svg class="size-7" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
+</svg>
+<h1 class="text-xl font-bold tracking-tight">My Portfolio</h1>
+</div>
+<nav class="hidden md:flex items-center gap-6 lg:gap-8">
+<a class="nav-link text-white hover:text-[var(--light-cream)]" href="#about">About Me</a>
+<a class="nav-link text-white hover:text-[var(--light-cream)]" href="#education">Education</a>
+<a class="nav-link text-white hover:text-[var(--light-cream)]" href="#tools">Tools</a>
+<a class="nav-link text-white hover:text-[var(--light-cream)]" href="#projects">Projects</a>
+</nav>
+<div class="flex items-center gap-2">
+<a aria-label="LinkedIn Profile" class="flex items-center justify-center rounded-full h-9 w-9 bg-white text-[var(--primary-green)] hover:bg-opacity-90 transition-all" href="#">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path>
+</svg>
+</a>
+<a aria-label="GitHub Profile" class="flex items-center justify-center rounded-full h-9 w-9 bg-white text-[var(--primary-green)] hover:bg-opacity-90 transition-all" href="#">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"></path>
+</svg>
+</a>
+<button class="md:hidden p-2 rounded-md text-white hover:bg-white hover:text-[var(--primary-green)] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</button>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
+<div class="layout-content-container flex flex-col max-w-4xl flex-1">
+<section class="mb-12" id="about">
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden rounded-xl shadow-lg min-h-[300px] md:min-h-[400px]" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDaNlvTLQfvjDozhRDa4o2kInrTTXTuvd2_KcS-MB60ppg4CsHIQXZ-DY-mKwe0ox5vt3TAmdqW1CLJPhXtapfm2ZH1GsLtetcj_WByMcoc3Gg6lEIlDVWscbLkuiCnhRPn57Y02DDhMZDKJKVh7TVBRI3A2KbBae0tKf6FlWpQBzwTpyLghMZvdsRFjbTaYxauunJb-l_37m_hF8iZIuirHaEm0eA_RfXclm9awD3rTp0WJtZRASaX7aeSh3-QalDu5IA7P4IJLqg");'></div>
+<div class="mt-8 p-6 bg-white rounded-xl shadow-lg">
+<h2 class="text-3xl font-bold text-[var(--dark-green-text)] mb-4">About Me</h2>
+<p class="text-gray-700 text-lg leading-relaxed">
+                  I'm a passionate designer focused on creating sustainable solutions. My work blends creativity with environmental consciousness, aiming to make a positive impact
+                  through innovative design. I believe in the power of design to address global challenges and am committed to crafting solutions that are both beautiful and
+                  beneficial for the planet.
+                </p>
+</div>
+</section>
+<section class="mb-12 p-6 bg-white rounded-xl shadow-lg" id="education">
+<h2 class="text-3xl font-bold text-[var(--dark-green-text)] mb-6">Education</h2>
+<div class="space-y-4">
+<div>
+<h3 class="text-xl font-semibold text-[var(--medium-green-accent)]">Master of Sustainable Design</h3>
+<p class="text-gray-600">University of Green Initiatives, 2020 - 2022</p>
+</div>
+<div>
+<h3 class="text-xl font-semibold text-[var(--medium-green-accent)]">Bachelor of Fine Arts in Graphic Design</h3>
+<p class="text-gray-600">Creative Arts Institute, 2016 - 2020</p>
+</div>
+</div>
+</section>
+<section class="mb-12 p-6 bg-white rounded-xl shadow-lg" id="tools">
+<h2 class="text-3xl font-bold text-[var(--dark-green-text)] mb-6">Tools &amp; Technologies</h2>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
+<div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg hover:shadow-md transition-shadow">
+<span class="text-3xl mb-2">🎨</span>
+<p class="font-medium text-gray-700">Adobe Creative Suite</p>
+</div>
+<div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg hover:shadow-md transition-shadow">
+<span class="text-3xl mb-2">💻</span>
+<p class="font-medium text-gray-700">Figma</p>
+</div>
+<div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg hover:shadow-md transition-shadow">
+<span class="text-3xl mb-2">♻️</span>
+<p class="font-medium text-gray-700">Life Cycle Assessment Tools</p>
+</div>
+<div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg hover:shadow-md transition-shadow">
+<span class="text-3xl mb-2">💡</span>
+<p class="font-medium text-gray-700">Prototyping Software</p>
+</div>
+</div>
+</section>
+<section class="mb-12 p-6 bg-white rounded-xl shadow-lg" id="projects">
+<h2 class="text-3xl font-bold text-[var(--dark-green-text)] mb-6">Projects</h2>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="bg-gray-50 p-6 rounded-lg hover:shadow-xl transition-shadow">
+<h3 class="text-xl font-semibold text-[var(--medium-green-accent)] mb-2">Eco-Friendly Packaging Redesign</h3>
+<p class="text-gray-600">Developed innovative packaging solutions using biodegradable materials for a local food company, reducing waste by 30%.</p>
+</div>
+<div class="bg-gray-50 p-6 rounded-lg hover:shadow-xl transition-shadow">
+<h3 class="text-xl font-semibold text-[var(--medium-green-accent)] mb-2">Urban Green Space Initiative</h3>
+<p class="text-gray-600">Designed a community garden project for an urban neighborhood, promoting local food production and biodiversity.</p>
+</div>
+</div>
+</section>
+</div>
+</main>
+<footer class="bg-[var(--primary-green)] text-white py-8">
+    <div class="flex justify-center gap-6 mb-6">
+        <a aria-label="Facebook Profile" class="footer-social-icon text-white hover:text-[var(--light-cream)]" href="#">
+            <svg fill="currentColor" width="28" height="28" viewBox="0 0 24 24">
+                <path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0"/>
+            </svg>
+        </a>
+        <a aria-label="Instagram Profile" class="footer-social-icon text-white hover:text-[var(--light-cream)]" href="#">
+            <svg fill="currentColor" width="28" height="28" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.241 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.241 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.241-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.515 2.567 5.782 2.295 7.148 2.233 8.414 2.175 8.794 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.775.13 4.602.402 3.635 1.37 2.668 2.337 2.396 3.51 2.338 4.788 2.279 6.068 2.267 6.477 2.267 12c0 5.523.012 5.932.071 7.212.058 1.278.33 2.451 1.297 3.418.967.967 2.14 1.239 3.418 1.297 1.28.059 1.689.071 7.212.071s5.932-.012 7.212-.071c1.278-.058 2.451-.33 3.418-1.297.967-.967 1.239-2.14 1.297-3.418.059-1.28.071-1.689.071-7.212s-.012-5.932-.071-7.212c-.058-1.278-.33-2.451-1.297-3.418C21.451.402 20.278.13 19 .072 17.72.013 17.311 0 14.052 0h-4.104zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/>
+            </svg>
+        </a>
+        <a aria-label="LinkedIn Profile" class="footer-social-icon text-white hover:text-[var(--light-cream)]" href="#">
+            <svg fill="currentColor" width="28" height="28" viewBox="0 0 256 256">
+                <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path>
+            </svg>
+        </a>
+        <a aria-label="Gmail" class="footer-social-icon text-white hover:text-[var(--light-cream)]" href="mailto:your.email@gmail.com">
+            <svg fill="currentColor" width="28" height="28" viewBox="0 0 24 24">
+                <path d="M20 4H4C2.897 4 2 4.897 2 6v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 5.01-8-5.01V6h16zm-16 12V8.489l7.445 4.653a1 1 0 0 0 1.11 0L20 8.489V18H4z"/>
+            </svg>
+        </a>
+    </div>
+    <div class="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center"></div>
+<div class="flex justify-center gap-6 mb-4">
+<a aria-label="GitHub Profile" class="footer-social-icon text-white hover:text-[var(--light-cream)]" href="#">
+<svg fill="currentColor" height="28px" viewBox="0 0 256 256" width="28px" xmlns="http://www.w3.org/2000/svg">
+<path d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"></path>
+</svg>
+</a>
+</div>
+<p class="text-sm font-normal leading-normal">© 2024 My Portfolio. All rights reserved.</p>
+<p class="text-xs mt-1 opacity-80">Designed with Sustainability in Mind.</p>
+</div>
+</footer>
+</div>
+</div>
+
+</body></html>
